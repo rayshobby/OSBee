@@ -212,9 +212,9 @@ void OSBee::open(int i) {
 // Open valve p (p = 'A', 'B, 'C', 'D'; or 'a', 'b', 'c', 'd')
 void OSBee::open(char p) {
   if (p>='A' && p<='D')
-    close((int)(p - 'A'));
+    open((int)(p - 'A'));
   else if (p>='a' && p<='d')
-    close((int)(p = 'a'));
+    open((int)(p = 'a'));
 }
 
 // get battery voltage
